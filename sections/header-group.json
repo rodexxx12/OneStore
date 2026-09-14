@@ -11,33 +11,45 @@
   "type": "header",
   "name": "t:names.header",
   "sections": {
-    "header_announcements_9jGBFp": {
-      "type": "header-announcements",
+    "marquee_mjYDby": {
+      "type": "marquee",
       "blocks": {
-        "announcement_BxgCk9": {
-          "type": "_announcement",
+        "text_gLGywP": {
+          "type": "text",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "<p>FREE SHIPPING  😊 BUY ANY 5 ITEMS, GET 30% OFF</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "custom",
             "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
-            "letter_spacing": "normal",
-            "case": "none"
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "announcement_BxgCk9"
+        "text_gLGywP"
       ],
-      "name": "t:names.announcement_bar",
+      "name": "t:names.marquee_section",
       "settings": {
-        "speed": 5,
-        "section_width": "page-width",
-        "background_color": "{{ settings.color_palette.background }}",
-        "divider_width": 1,
-        "divider_color": "{{ settings.color_palette.color2 }}",
-        "padding-block-start": 15,
-        "padding-block-end": 15
+        "movement_direction": "normal",
+        "background_color": "#625D5D",
+        "padding-block-start": 12,
+        "padding-block-end": 12,
+        "gap_between_elements": 24
       }
     },
     "header_section": {
@@ -58,6 +70,8 @@
           "static": true,
           "settings": {
             "menu": "main-menu",
+            "background_color": "{{ settings.color_palette.background }}",
+            "text_color": "",
             "type_font_primary_size": "0.875rem",
             "menu_font_style": "inverse",
             "type_font_primary_link": "body",
@@ -67,6 +81,8 @@
             "featured_collections_aspect_ratio": "16 / 9",
             "image_border_radius": 0,
             "navigation_bar": false,
+            "background_color_navigation_bar": "{{ settings.color_palette.background }}",
+            "text_color_navigation_bar": "",
             "drawer_accordion": false,
             "drawer_accordion_expand_first": false,
             "drawer_dividers": false
@@ -76,8 +92,9 @@
       },
       "settings": {
         "logo_position": "left",
-        "menu_position": "left",
+        "menu_position": "center",
         "menu_row": "top",
+        "customer_account_menu": "customer-account-main-menu",
         "show_search": true,
         "search_position": "right",
         "search_row": "top",
@@ -93,16 +110,34 @@
         "enable_sticky_header": "always",
         "divider_width": 0,
         "divider_size": "page-width",
+        "divider_color": "",
         "border_width": 0,
+        "bottom_border_color": "",
+        "actions_display_style": "icon",
+        "actions_font_size": "0.875rem",
+        "actions_font": "body",
+        "actions_text_case": "none",
         "background_color_top": "{{ settings.color_palette.background }}",
+        "text_color_top": "",
+        "background_color_bottom": "",
+        "text_color_bottom": "",
+        "bubble_style": "default",
+        "bubble_background_color": "",
+        "bubble_text_color": "",
         "enable_transparent_header_home": false,
+        "home_inverse_logo": false,
+        "text_color_transparent_home": "",
         "enable_transparent_header_product": false,
-        "enable_transparent_header_collection": false
+        "product_inverse_logo": false,
+        "text_color_transparent_product": "",
+        "enable_transparent_header_collection": false,
+        "collection_inverse_logo": false,
+        "text_color_transparent_collection": ""
       }
     }
   },
   "order": [
-    "header_announcements_9jGBFp",
+    "marquee_mjYDby",
     "header_section"
   ]
 }
